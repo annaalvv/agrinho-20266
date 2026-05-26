@@ -1,0 +1,213 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* CORPO DO SITE */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(to bottom,#b7efc5,#ecf39e);
+    color:#1b4332;
+}
+
+
+/* CABEÇALHO */
+
+header{
+    background:#2d6a4f;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+
+/* CARDS */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* TÍTULOS */
+
+h2{
+    color:#2d6a4f;
+    margin-bottom:20px;
+}
+
+
+/* CONTROLES */
+
+.controle{
+    margin:25px 0;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+input[type=range]{
+    width:100%;
+    height:10px;
+    border-radius:10px;
+    appearance:none;
+    background:#95d5b2;
+    outline:none;
+}
+
+
+/* BOTÃO DO SLIDER */
+
+input[type=range]::-webkit-slider-thumb{
+    appearance:none;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background:#2d6a4f;
+    cursor:pointer;
+}
+
+
+/* ESTUFA */
+
+.estufa{
+    background:#95d5b2;
+    border:6px solid #2d6a4f;
+    border-radius:25px;
+    padding:40px;
+    margin-top:30px;
+    text-align:center;
+}
+
+
+/* PITAYA */
+
+#pitaya{
+    font-size:120px;
+    transition:0.5s;
+}
+
+
+/* STATUS */
+
+.status{
+    margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+
+/* INDICADORES */
+
+.indicadores{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+
+/* CAIXAS */
+
+.box{
+    background:#d8f3dc;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.box:hover{
+    transform:scale(1.05);
+}
+
+
+/* TÍTULOS DAS CAIXAS */
+
+.box h3{
+    margin-bottom:10px;
+    color:#1b4332;
+}
+
+
+/* TEXTO DAS CAIXAS */
+
+.box p{
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+/* PONTUAÇÃO */
+
+.sustentavel{
+    margin-top:30px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#2d6a4f;
+}
+
+
+/* RODAPÉ */
+
+footer{
+    background:#2d6a4f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:32px;
+    }
+
+    #pitaya{
+        font-size:90px;
+    }
+
+    .status{
+        font-size:20px;
+    }
+
+}
